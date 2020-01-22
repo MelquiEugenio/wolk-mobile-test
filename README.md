@@ -32,6 +32,14 @@ Nesta tela, você deverá listar os repositórios que o usuário têm atrelado e
 * Descrição do repositório;
 * Linguagem na qual o repositório é baseado;
 
+# Pré-requisitos
+
+O aplicativo deverá funcionar em dispositivos com a versão do sistema operacional Android superior ou igual 5.0 (Lollipop - API 21).
+
+Sinta-se livre para desenvolver sua própria UI/UX, mas se quiser uma sugestão, aqui está:
+
+<img src="https://i.imgur.com/8T6TNQP.png" width="300">  <img src="https://i.imgur.com/3Z9Aasc.png" width="300">
+
 # Como realizar o teste
 
 1. Realize o Fork deste repositório e desenvolva sua aplicação dentro do mesmo (como pode perceber, conhecimentos em Git e GitHub são obrigatórios para realizar o teste).
