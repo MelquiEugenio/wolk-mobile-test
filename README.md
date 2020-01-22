@@ -49,6 +49,6 @@ Sinta-se livre para desenvolver sua própria UI/UX, mas se quiser uma sugestão,
 # Dicas
 
 * Para fazer sua aplicação, escolha um usuário que tenha foto de perfil e alguns repositórios em sua conta, para garantir que todas as informações apareçam na tela corretamente.
-* O aplicativo será testado a fim de verificar quebras e exceções (por exemplo: não tratar um possível dado nulo que venha da API). Portanto, garanta que o aplicativo esteja preparado para tratar qualquer ponto que possa gerar uma exceção que result em um *crash* do aplicativo.
+* O aplicativo será testado a fim de verificar quebras e exceções (por exemplo: não tratar um possível dado nulo que venha da API). Portanto, garanta que o aplicativo esteja preparado para tratar qualquer ponto que possa gerar uma exceção que resulte em um *crash* do aplicativo.
 * Se você deseja ir além do que o teste pede, toda adição é bem-vinda e será considerada! Só tenha em mente que se você implementou algo a mais e o mesmo não funcionou corretamente, tal ato irá pesar negativamente para sua avaliação.
-* Você pode utilizar bibliotecas para facilitar o carregamento de imagens (sugestão: Picasso ou Glide).
+* Sinta-se livre para utilizar bibliotecas de terceiros para desenvolver o aplicativo. No carregamento de imagens, por exemplo, sugiro que seja utilizado bibliotecas como o Picasso ou Glide.
