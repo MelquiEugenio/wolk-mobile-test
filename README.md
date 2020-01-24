@@ -36,6 +36,8 @@ Nesta tela, você deverá listar os repositórios que o usuário têm atrelado e
 
 O aplicativo deverá funcionar em dispositivos com a versão do sistema operacional Android superior ou igual 5.0 (Lollipop - API 21).
 
+A linguagem na qual o teste pode ser realizado é Java ou Kotlin.
+
 Sinta-se livre para desenvolver sua própria UI/UX, mas se quiser uma sugestão, aqui está:
 
 <img src="https://i.imgur.com/8T6TNQP.png" width="300">  <img src="https://i.imgur.com/3Z9Aasc.png" width="300">
