@@ -12,4 +12,12 @@ class RepositoriesActivity : AppCompatActivity() {
 
         Toast.makeText(this, "Activity working.", Toast.LENGTH_LONG).show()
     }
+
+    override fun onBackPressed() {
+
+        super.onBackPressed()
+
+        finish()
+        overridePendingTransition(R.anim.slide_out, R.anim.slide_in)
+    }
 }
