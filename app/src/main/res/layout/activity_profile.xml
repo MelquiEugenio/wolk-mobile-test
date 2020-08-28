@@ -9,7 +9,7 @@
     android:gravity="center"
     android:orientation="vertical"
     android:background="#ffffff"
-    tools:context=".MainActivity">
+    tools:context=".ProfileActivity">
 
     <Space
         android:layout_width="match_parent"
@@ -51,7 +51,6 @@
         android:layout_weight="1.5"
         android:background="@color/clear"
         android:contentDescription="@string/see_repositories"
-        android:visibility="invisible"
         app:srcCompat="@drawable/repo_button" />
 
     <Space

@@ -4,4 +4,6 @@
     <string name="see_repositories">See Repositories.</string>
     <string name="logo">Logo.</string>
     <string name="error">Not found.</string>
+    <string name="hint">User login</string>
+    <string name="search_button">Search</string>
 </resources>
