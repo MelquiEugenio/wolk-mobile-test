@@ -51,7 +51,7 @@
         android:layout_weight="1.5"
         android:background="@color/clear"
         android:contentDescription="@string/see_repositories"
-        app:srcCompat="@drawable/repo_button" />
+        app:srcCompat="@drawable/see_repositories" />
 
     <Space
         android:layout_width="match_parent"

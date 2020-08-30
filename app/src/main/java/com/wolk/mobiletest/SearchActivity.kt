@@ -1,8 +1,5 @@
 package com.wolk.mobiletest
 
-//TODO implement RecycleView with FAN to GET repos from user from Github API
-// check best practices
-
 import android.content.Context
 import android.content.Intent
 import android.net.ConnectivityManager
@@ -20,36 +17,45 @@ import com.androidnetworking.interfaces.JSONObjectRequestListener
 import kotlinx.android.synthetic.main.activity_search.*
 import org.json.JSONObject
 
+
 class SearchActivity : AppCompatActivity() {
 
-    private var userLogin :String? = null
+    private var userLogin: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_search)
 
+        // On Search button click
         search_button.setOnClickListener {
 
             userLogin = input.text.toString()
 
-            if (Build.VERSION.SDK_INT >= 23)
-            {
-                if (isOnline())
-                    getData()
-                else
-                    Toast.makeText(this, "No internet connection.", Toast.LENGTH_LONG).show()
-            }
-            else {
-                if (isOnlineAPI23Below())
-                    getData()
-                else
-                    Toast.makeText(this, "No internet connection.", Toast.LENGTH_LONG).show()
-            }
+            if (internetConnectionValidation()) {
+                buttonLock(true)
+                getData()
+            } else
+                Toast.makeText(this, "No internet connection.", Toast.LENGTH_LONG).show()
         }
     }
 
     //region Functions
+
+    private fun buttonLock(toLock: Boolean) {
+
+        if (toLock) {
+            search_button.isEnabled = false
+            search_button.text = getString(R.string.searching)
+        } else {
+            search_button.text = getString(R.string.search)
+            search_button.isEnabled = true
+        }
+    }
+
+    private fun internetConnectionValidation(): Boolean {
+        return if (Build.VERSION.SDK_INT >= 23) isOnline() else isOnlineAPI23Below()
+    }
 
     private fun getData() {
 
@@ -61,17 +67,20 @@ class SearchActivity : AppCompatActivity() {
                 // SUCCESS
                 override fun onResponse(response: JSONObject) {
 
-                    sendData(response)
+                    sendDataToActivity(response)
+                    buttonLock(false)
                 }
+
                 // FAILURE
                 override fun onError(error: ANError) {
 
                     Toast.makeText(this@SearchActivity, "Not found.", Toast.LENGTH_SHORT).show()
+                    buttonLock(false)
                 }
             })
     }
 
-    private fun sendData(response: JSONObject) {
+    private fun sendDataToActivity(response: JSONObject) {
 
         // Assign JSONObj data to array
         val dataArray: Array<String> = arrayOf(

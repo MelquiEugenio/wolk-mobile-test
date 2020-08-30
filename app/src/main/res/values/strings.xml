@@ -5,5 +5,6 @@
     <string name="logo">Logo.</string>
     <string name="error">Not found.</string>
     <string name="hint">User login</string>
-    <string name="search_button">Search</string>
+    <string name="search">Search</string>
+    <string name="searching">SEARCHING…</string>
 </resources>

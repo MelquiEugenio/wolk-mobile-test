@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 
+
 class SplashActivity : AppCompatActivity() {
 
     private val splashTimeOut :Long = 2000 // 1 sec
