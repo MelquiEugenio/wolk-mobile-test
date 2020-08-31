@@ -79,9 +79,9 @@ class ProfileActivity : AppCompatActivity() {
 
         if (toLock) {
             repositories_button.isEnabled = false
-            repositories_button.setImageResource(R.drawable.searching)
+            repositories_button.text = getString(R.string.searching)
         } else {
-            repositories_button.setImageResource(R.drawable.see_repositories)
+            repositories_button.text = getString(R.string.repo_button_text)
             repositories_button.isEnabled = true
         }
     }

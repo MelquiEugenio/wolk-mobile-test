@@ -1,10 +1,9 @@
 <resources>
     <string name="app_name">Wolk Mobile Test</string>
-    <string name="avatar">Github User Avatar.</string>
-    <string name="see_repositories">See Repositories.</string>
     <string name="logo">Logo.</string>
     <string name="error">Not found.</string>
     <string name="hint">User login</string>
-    <string name="search">Search</string>
+    <string name="search">SEARCH</string>
     <string name="searching">SEARCHING…</string>
+    <string name="repo_button_text">SEE REPOSITORIES</string>
 </resources>
