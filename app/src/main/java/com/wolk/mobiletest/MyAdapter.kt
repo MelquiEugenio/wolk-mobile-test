@@ -9,12 +9,12 @@ import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.row.view.*
 
 
-class MyAdapter(val arrayList: ArrayList<Model>, val context: Context) :
+class MyAdapter(private val arrayList: ArrayList<Model>, private val context: Context) :
     RecyclerView.Adapter<MyAdapter.ViewHolder>() {
 
-    class ViewHolder(itemView :View) : RecyclerView.ViewHolder(itemView) {
+    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        fun bindItems(model :Model) {
+        fun bindItems(model: Model) {
 
             itemView.repo_title.text = model.title
 
